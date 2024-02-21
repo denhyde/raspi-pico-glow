@@ -1,3 +1,8 @@
+# Copy the DHT20 library code from
+# https://github.com/flrrth/pico-dht20/blob/main/dht20/dht20.py
+# and save it on RaspberryPi Pico (not local computer!)
+# as dht20.py file
+
 from machine import Pin, I2C
 import time
 from dht20 import DHT20
@@ -25,4 +30,4 @@ while True:
     print("                        ") # Empty line
     
     # Wait 5 seconds
-    time.sleep(5)
+    time.sleep(60)
